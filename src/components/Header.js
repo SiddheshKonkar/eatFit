@@ -1,10 +1,10 @@
 import React from "react";
 
-
 const Header = () => {
   return (
     <>
-      <div className="flex items-center px-5 justify-around bg-amber-100 ">
+      {/* Desktop Nav */}
+      <div className="hidden md:flex items-center px-5 justify-around bg-amber-100 ">
         <a href="/">
           <img src="../assets/biteboxLogo.png" className="h-24 w-24" />
         </a>
@@ -25,6 +25,14 @@ const Header = () => {
         <a className="text-amber-700 font-semibold	text-lg" href="#">
           Log in
         </a>
+      </div>
+
+      {/* Mobile Nav */}
+      <div className=" flex items-center px-5 justify-between bg-amber-100 md:hidden ">
+        <a href="/">
+          <img src="../assets/biteboxLogo.png" className="h-20 w-20" />
+        </a>
+        <img src="../assets/hamburger.png" className="h-14 w-14" />
       </div>
     </>
   );
