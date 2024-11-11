@@ -23,8 +23,7 @@ const Header = () => {
           </a>
         </div>
         <a className="text-amber-700 font-semibold	text-lg" href="#">
-          Log in
-        </a>
+Cart        </a>
       </div>
 
       {/* Mobile Nav */}
